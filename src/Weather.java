@@ -14,7 +14,23 @@ public class Weather {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Ingresa temperatura en celsius:");
         int temperature = scanner.nextInt();
+        
+        if (temperature < 0) {
+            System.out.println("Te estás congelando");
+        } else if (temperature < 10) {
+            System.out.println("Hace mucho frío");
+        } else if (temperature < 17) {
+            System.out.println("Con un abrigo estás bien");
+        } else if (temperature < 25) {
+            System.out.println("Parece que ha llegado el verano");
+        } else if (temperature < 35) {
+            System.out.println("Que calooorrr");
+        } else if (temperature > 36) {
+            System.out.println("Aquí no hay quien viva");
+        }
 
+
+        scanner.close();
 
     }
 }
