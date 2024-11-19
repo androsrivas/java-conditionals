@@ -1,7 +1,19 @@
 public class TrafficLights {
     public static void main(String[] args) {
-
-        //Escribe un programa que basado en el color del semáforo verde, amarillo o rojo determine las acciones de un conductor 
+        
+        String trafficLight = "";
+        
+        if (trafficLight == "green") {
+            System.out.println("Puedes seguir");
+        } else if (trafficLight == "amber") {
+            System.out.println("Ten cuidado");
+        } else if (trafficLight == "red") {
+            System.out.println("¡¡¡Para!!!");
+        } else {
+            System.out.println("El semáforo está dañado");
+        }
+        //Escribe un programa que basado en el color del semáforo verde, amarillo o rojo
+        //determine las acciones de un conductor
         
         //Si es verde imprime en la terminal: Puedes seguir
         //Si es amarillo imprime en la terminal: Ten cuidado
